@@ -32,7 +32,7 @@ func TestGetAPIKey(t *testing.T) {
 			name:    "malformed authorization header",
 			headers: make(http.Header),
 			want:    "",
-			wantErr: errors.New("malformed authorization header"),
+			wantErr: ErrMalformedHeader,
 		},
 	}
 
